@@ -21,11 +21,11 @@
 title: Jangyoojin_portfolio
 email: candyyoojin1@naver.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Hi Hello
+  Jangyoojin_portfolio
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://Jangyoojin.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://jangyoojin.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ""
-github_username:  Jangyoojin
+github_username:  jangyoojin
 
 # Build settings
 theme: minima
