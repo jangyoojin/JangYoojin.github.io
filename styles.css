@@ -32,9 +32,9 @@ nav a:hover, nav a:focus-visible { color: var(--pink); }
 .hero { align-items: center; display: grid; gap: 3rem; grid-template-columns: minmax(0, 1fr) 300px; min-height: 560px; padding-bottom: 5rem; padding-top: 4rem; }
 .eyebrow { color: var(--purple); font-size: .72rem; font-weight: 800; letter-spacing: .14em; margin: 0 0 .75rem; }
 h1, h2, h3, p { margin-top: 0; }
-h1 { font-size: clamp(3.3rem, 8vw, 7.8rem); letter-spacing: -.075em; line-height: .9; margin-bottom: 1.5rem; max-width: 800px; }
+h1 { font-size: clamp(1.8rem, 4vw, 3.9rem); letter-spacing: -.075em; line-height: .95; margin-bottom: 1.5rem; max-width: 800px; }
 h1 span { color: var(--pink); }
-h2 { font-size: clamp(2.2rem, 5vw, 5.2rem); letter-spacing: -.065em; line-height: .96; margin-bottom: 1.25rem; }
+h2 { font-size: clamp(1.5rem, 2.6vw, 2.6rem); letter-spacing: -.065em; line-height: 1; margin-bottom: 1.25rem; }
 h3 { font-size: 1.25rem; line-height: 1.15; margin-bottom: .45rem; }
 .hero-intro, .section-lede { color: var(--muted); font-size: clamp(1.05rem, 2vw, 1.3rem); max-width: 620px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 2rem; }
@@ -50,8 +50,9 @@ h3 { font-size: 1.25rem; line-height: 1.15; margin-bottom: .45rem; }
 .orbit-core { align-items: center; background: var(--purple); border: 8px solid var(--paper); border-radius: 50%; color: #fff; display: flex; font-size: 2.5rem; font-weight: 900; height: 120px; justify-content: center; transform: rotate(9deg); width: 120px; }
 
 .content-layout { display: grid; gap: clamp(2.5rem, 8vw, 7rem); grid-template-columns: minmax(190px, .34fr) minmax(0, 1fr); }
-.profile-card { align-self: start; border-top: .35rem solid var(--purple); padding-top: 1.25rem; position: sticky; top: 1.5rem; }
-.profile-card h2 { font-size: clamp(2.4rem, 5vw, 4.5rem); margin-bottom: .75rem; }
+.profile-rail { align-self: start; min-width: 0; }
+.profile-card { border-top: .35rem solid var(--purple); padding-top: 1.25rem; }
+.profile-card h2 { font-size: clamp(1.8rem, 3vw, 2.8rem); margin-bottom: .75rem; }
 .role { color: var(--pink); font-weight: 800; }
 .profile-history { margin: 2.5rem 0 0; }
 .profile-history div + div { border-top: 1px solid var(--line); margin-top: 1.25rem; padding-top: 1.25rem; }
@@ -65,11 +66,13 @@ dd { margin: 0; }
 .timeline-label { color: var(--purple); font-size: .7rem; font-weight: 800; letter-spacing: .1em; margin-bottom: .4rem; }
 .timeline-card p:last-child { color: var(--muted); margin-bottom: 0; }
 .split-section { align-items: start; display: grid; gap: 2rem; grid-template-columns: 1fr 1fr; }
-.split-section h2 { font-size: clamp(2rem, 4vw, 4rem); }
+.split-section h2 { font-size: clamp(1.5rem, 2.5vw, 2.4rem); }
 .pending-note { color: var(--muted); margin: 0; padding-top: 1.25rem; }
 .pending-note strong, .section-lede strong { color: var(--pink); }
 
 .game-section { padding-bottom: 7rem; }
+.profile-rail .game-section { padding-bottom: 2rem; padding-top: 4rem; }
+.profile-rail .game-toolbar { grid-template-columns: repeat(2, 1fr); }
 .game-heading { border: 0; padding: 0 0 1.5rem; }
 .game-heading h2 { margin-bottom: .5rem; }
 .game-heading > p:last-child { color: var(--muted); }
@@ -115,7 +118,7 @@ canvas { display: block; height: auto; image-rendering: auto; max-width: 100%; w
   .orbit { height: 110px; width: 220px; }
   .orbit-two { height: 220px; width: 110px; }
   .content-layout { display: block; }
-  .profile-card { margin-bottom: 3rem; position: static; }
+  .profile-card { margin-bottom: 3rem; }
   .content-section { padding: 4rem 0; }
   .split-section { display: block; }
   .split-section .pending-note { padding-top: 0; }
