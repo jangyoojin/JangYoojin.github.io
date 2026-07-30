@@ -73,6 +73,9 @@ dd { margin: 0; }
 .game-section { padding-bottom: 7rem; }
 .profile-rail .game-section { padding-bottom: 2rem; padding-top: 4rem; }
 .profile-rail .game-toolbar { grid-template-columns: repeat(2, 1fr); }
+.profile-rail .game-toolbar div { align-items: center; display: flex; flex-direction: row; gap: .35rem; justify-content: space-between; min-width: 0; }
+.profile-rail .game-toolbar span { display: inline; flex: 1 1 auto; font-size: .55rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.profile-rail .game-toolbar strong { display: inline; flex: 0 0 auto; font-size: .85rem; }
 .game-heading { border: 0; padding: 0 0 1.5rem; }
 .game-heading h2 { margin-bottom: .5rem; }
 .game-heading > p:last-child { color: var(--muted); }
