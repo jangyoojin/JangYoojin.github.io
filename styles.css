@@ -1,0 +1,187 @@
+:root {
+  color: #17233c;
+  background: #fff8f0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+a {
+  color: inherit;
+}
+
+.site-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 1.5rem 2rem;
+}
+
+.brand {
+  color: #ff4f8b;
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 1.25rem;
+}
+
+nav a {
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  color: #ff4f8b;
+}
+
+.page-shell {
+  display: grid;
+  gap: clamp(2rem, 6vw, 6rem);
+  grid-template-columns: minmax(190px, 0.35fr) minmax(0, 1fr);
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: clamp(3rem, 10vw, 8rem) 2rem;
+}
+
+.profile-card {
+  align-self: start;
+  border-top: 0.35rem solid #7357ff;
+  padding-top: 1.25rem;
+}
+
+.eyebrow {
+  color: #7357ff;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  margin: 0 0 0.75rem;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+h2 {
+  font-size: clamp(2.4rem, 7vw, 6.5rem);
+  letter-spacing: -0.06em;
+  line-height: 0.95;
+  margin-bottom: 1.5rem;
+  max-width: 760px;
+}
+
+.role {
+  color: #ff4f8b;
+  font-weight: 800;
+}
+
+.profile-history {
+  margin: 2.5rem 0 0;
+}
+
+.profile-history div + div {
+  border-top: 1px solid #e7dcd5;
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+}
+
+dt {
+  color: #7357ff;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.25rem;
+}
+
+dd {
+  margin: 0;
+}
+
+.content-column {
+  min-width: 0;
+}
+
+.intro {
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  margin-bottom: clamp(3rem, 8vw, 7rem);
+}
+
+.games-card {
+  align-items: flex-end;
+  background: #a8f0d1;
+  border-radius: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  padding: clamp(1.5rem, 4vw, 3rem);
+}
+
+.games-card h2 {
+  font-size: clamp(2.2rem, 5vw, 4.5rem);
+  margin-bottom: 0.75rem;
+}
+
+.games-card p:last-child {
+  margin-bottom: 0;
+  max-width: 34rem;
+}
+
+.game-status {
+  background: #17233c;
+  border-radius: 999px;
+  color: #fff;
+  flex: 0 0 auto;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  padding: 0.65rem 0.85rem;
+}
+
+@media (max-width: 700px) {
+  .site-header {
+    padding: 1.25rem 1.25rem;
+  }
+
+  .page-shell {
+    display: block;
+    padding: 3.5rem 1.25rem;
+  }
+
+  .profile-card {
+    margin-bottom: 4rem;
+  }
+
+  .games-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
